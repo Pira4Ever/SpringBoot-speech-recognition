@@ -1,5 +1,6 @@
 package dio.budgeting;
 
+import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class ChatModelController {
-    private final OllamaChatModel ollamaChatModel;
+    private final ChatClient chatClient;
 
-    public ChatModelController(OllamaChatModel ollamaChatModel) {
-        this.ollamaChatModel = ollamaChatModel;
+    public ChatModelController(ChatClient chatClient) {
+        this.chatClient = chatClient;
     }
 
-    @GetMapping("/chat-model")
+    @GetMapping("/chat")
     String chat(String prompt) {
-        return this.ollamaChatModel.call(prompt);
+        return this.chatClient.prompt().user(prompt).call().content();
     }
 }
