@@ -31,6 +31,7 @@ dependencies {
     implementation 'com.qxotic:jinfer-spring-ai-spring-boot-starter:0.3.1'
 
     implementation 'com.qxotic:jinfer-parakeet:0.3.1'
+    implementation 'com.qxotic:jinfer-kokoro:0.3.1'
 
     runtimeOnly 'com.qxotic:jam-native:0.3.1'
     runtimeOnly 'com.qxotic:jam-vector:0.3.1'

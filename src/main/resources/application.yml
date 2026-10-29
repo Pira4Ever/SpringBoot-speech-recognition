@@ -13,6 +13,7 @@ spring:
     jinfer:
       transcription:
         model: C:/Users/octavio/Documents/ia-models/parakeet-tdt-0.6b-v3-q8_0.gguf
-#      speech:
-#        model-path: C:/ia-models/kokoro-Q8_0.gguf
-#        companion-path: C:/ia-models/voices/kokoro-voice-af_heart.gguf
+      speech:
+        model: C:/Users/octavio/Documents/ia-models/kokoro-82m-q8_0.gguf
+        companions:
+          voice: C:/Users/octavio/Documents/ia-models/voices/kokoro-voice-pf_dora.gguf
