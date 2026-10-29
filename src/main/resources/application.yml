@@ -17,3 +17,6 @@ spring:
         model: C:/Users/octavio/Documents/ia-models/kokoro-82m-q8_0.gguf
         companions:
           voice: C:/Users/octavio/Documents/ia-models/voices/kokoro-voice-pf_dora.gguf
+  jpa:
+    hibernate:
+      ddl-auto: update
