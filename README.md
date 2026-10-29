@@ -142,9 +142,3 @@ Exemplo de formato:
 - Como usar o **Docker Compose com Spring Boot** para provisionar o banco automaticamente em desenvolvimento.
 - A importância de organizar o fluxo **áudio → texto → processamento → persistência** em camadas bem definidas.
 - Boas práticas de documentação para que outra pessoa consiga executar e testar o projeto.
-
----
-
-## 📄 Licença
-
-`TODO`: informe a licença do projeto (ou remova esta seção).
