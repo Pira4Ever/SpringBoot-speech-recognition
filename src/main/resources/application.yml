@@ -10,3 +10,9 @@ spring:
         options:
           model: llama3.1
           temperature: 0.7
+    jinfer:
+      transcription:
+        model: C:/Users/octavio/Documents/ia-models/parakeet-tdt-0.6b-v3-q8_0.gguf
+#      speech:
+#        model-path: C:/ia-models/kokoro-Q8_0.gguf
+#        companion-path: C:/ia-models/voices/kokoro-voice-af_heart.gguf
